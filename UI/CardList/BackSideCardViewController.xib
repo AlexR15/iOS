@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BackSideCardViewController" customModule="CardBag" customModuleProvider="target">
+            <connections>
+                <outlet property="labelCategory" destination="5uv-F3-LZ7" id="9VB-Xa-QqX"/>
+                <outlet property="labelDiscount" destination="iAh-TB-LDu" id="2bh-1v-eDR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2v-Fj-C7X">
+                    <rect key="frame" x="16" y="371.5" width="343" height="44"/>
+                    <state key="normal" title="СОХРАНИТЬ" backgroundImage="Background_Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonSaveCard:" destination="-1" eventType="touchUpInside" id="R7Q-oo-xlc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelCategory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uv-F3-LZ7">
+                    <rect key="frame" x="16" y="80" width="106" height="20"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelDiscount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAh-TB-LDu">
+                    <rect key="frame" x="132" y="80" width="104" height="19.5"/>
+                    <color key="backgroundColor" red="0.0006846471224" green="0.59278786179999998" blue="0.53358036279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageTestCard" translatesAutoresizingMaskIntoConstraints="NO" id="dpy-3t-zOU">
+                    <rect key="frame" x="16" y="115.5" width="343" height="204"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тыльная сторона" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNP-oR-RgC">
+                    <rect key="frame" x="16" y="335.5" width="343" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N40-3M-sQa">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Title" id="SIL-m8-KPp"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="N40-3M-sQa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0P8-tL-xRE"/>
+                <constraint firstItem="q2v-Fj-C7X" firstAttribute="top" secondItem="CNP-oR-RgC" secondAttribute="bottom" constant="16" id="8ql-tY-ILB"/>
+                <constraint firstItem="CNP-oR-RgC" firstAttribute="top" secondItem="dpy-3t-zOU" secondAttribute="bottom" constant="16" id="9S1-E5-nXy"/>
+                <constraint firstItem="5uv-F3-LZ7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="A5k-AA-hMS"/>
+                <constraint firstItem="CNP-oR-RgC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="EW4-ks-4qc"/>
+                <constraint firstItem="iAh-TB-LDu" firstAttribute="top" secondItem="N40-3M-sQa" secondAttribute="bottom" constant="16" id="IyG-KZ-m2Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dpy-3t-zOU" secondAttribute="trailing" constant="16" id="OG5-t2-BZR"/>
+                <constraint firstItem="q2v-Fj-C7X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TiP-Pb-00B"/>
+                <constraint firstItem="iAh-TB-LDu" firstAttribute="leading" secondItem="5uv-F3-LZ7" secondAttribute="trailing" constant="10" id="WRL-X0-BXy"/>
+                <constraint firstItem="CNP-oR-RgC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dFv-eX-cEn"/>
+                <constraint firstItem="5uv-F3-LZ7" firstAttribute="top" secondItem="N40-3M-sQa" secondAttribute="bottom" constant="16" id="dTq-xf-MDP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q2v-Fj-C7X" secondAttribute="trailing" constant="16" id="diF-0f-5pD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CNP-oR-RgC" secondAttribute="trailing" constant="16" id="iiA-YH-05z"/>
+                <constraint firstItem="dpy-3t-zOU" firstAttribute="top" secondItem="iAh-TB-LDu" secondAttribute="bottom" constant="16" id="p7c-EF-ZRR"/>
+                <constraint firstItem="dpy-3t-zOU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="wwK-Ka-OYD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="52" y="78.710644677661179"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background_Button" width="328" height="44"/>
+        <image name="ImageTestCard" width="328" height="204"/>
+    </resources>
+</document>

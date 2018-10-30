@@ -12,23 +12,36 @@ class AddNewCardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+/*
         navigationItem.title = "Добавить карту"
-        // Do any additional setup after loading the view.
         let previous = UIBarButtonItem(image: UIImage(named: "IconClose"), style: .plain, target: self, action: #selector(prevPage))
-        
         navigationItem.leftBarButtonItem = previous
-        
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc private func prevPage() {
+        let prev = CardListViewController()
+        let navigation = UINavigationController(rootViewController: prev)
+        ///let closeButton = UIBarButtonItem(image: UIImage(named: "IconClose"), style: .plain, target: self, action: #selector(close))
+        //prev.navigationItem.title = "Добавить карту"
+        //prev.navigationItem.leftBarButtonItem = closeButton
+        navigationController?.present(navigation, animated: true, completion: nil)
     }
-    */
+
+    @objc private func close() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+*/
+    @IBAction func buttonTakePhoto(_ sender: Any) {
+        let next = FrontSideCardViewController()
+        navigationController?.pushViewController(next, animated: true)
+    }
+    
+    @IBAction func goCategoryTable(_ sender: Any) {
+        let next = CategoryViewController()
+        navigationController?.pushViewController(next, animated: true)
+    }
+
 
 }

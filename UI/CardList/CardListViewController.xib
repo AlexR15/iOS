@@ -26,10 +26,57 @@
                         <navigationItem title="Title" id="QtB-n6-5Zr"/>
                     </items>
                 </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Нажмите" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08u-DC-IEd">
+                    <rect key="frame" x="54" y="321" width="78.5" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="IconAdd" translatesAutoresizingMaskIntoConstraints="NO" id="zH2-r9-ISF">
+                    <rect key="frame" x="164" y="325" width="17" height="17"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Нет карт" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sj-9h-NBH">
+                    <rect key="frame" x="13" y="242" width="348" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="вашу первую карту!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxM-oB-0ji">
+                    <rect key="frame" x="39" y="349" width="266" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="чтобы добавить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8R-zD-ota">
+                    <rect key="frame" x="209" y="321" width="128" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nxM-oB-0ji" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0Mu-0Y-S3P"/>
+                <constraint firstItem="zH2-r9-ISF" firstAttribute="top" secondItem="7Sj-9h-NBH" secondAttribute="bottom" constant="56" id="9Lu-oI-aej"/>
+                <constraint firstItem="t8R-zD-ota" firstAttribute="top" secondItem="7Sj-9h-NBH" secondAttribute="bottom" constant="56" id="COe-5w-6pl"/>
+                <constraint firstItem="nxM-oB-0ji" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="Ntk-pD-RzC"/>
+                <constraint firstItem="zH2-r9-ISF" firstAttribute="leading" secondItem="08u-DC-IEd" secondAttribute="trailing" constant="33" id="RD3-QU-xHT"/>
+                <constraint firstItem="08u-DC-IEd" firstAttribute="top" secondItem="7Sj-9h-NBH" secondAttribute="bottom" constant="56" id="TGU-L6-HzG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t8R-zD-ota" secondAttribute="trailing" constant="47" id="W4r-i8-iab"/>
+                <constraint firstItem="7Sj-9h-NBH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dWq-ix-Ccy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Sj-9h-NBH" secondAttribute="trailing" constant="16" id="dvH-Ui-0BN"/>
+                <constraint firstItem="7Sj-9h-NBH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eIE-hn-4xj"/>
+                <constraint firstItem="7Sj-9h-NBH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="203" id="fyI-9q-wGS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nxM-oB-0ji" secondAttribute="trailing" constant="47" id="jwJ-aC-kom"/>
+                <constraint firstItem="08u-DC-IEd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="lJF-RC-kP1"/>
+                <constraint firstItem="nxM-oB-0ji" firstAttribute="top" secondItem="08u-DC-IEd" secondAttribute="bottom" constant="5" id="t7E-r7-0ht"/>
+                <constraint firstItem="t8R-zD-ota" firstAttribute="leading" secondItem="zH2-r9-ISF" secondAttribute="trailing" constant="16" id="xwO-s8-rIH"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-321" y="-127"/>
+            <point key="canvasLocation" x="-322.39999999999998" y="-127.28635682158921"/>
         </view>
     </objects>
+    <resources>
+        <image name="IconAdd" width="17" height="17"/>
+    </resources>
 </document>
